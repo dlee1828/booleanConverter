@@ -43,7 +43,7 @@ public:
     string OR = " + "; //the string used to represent OR
     string NOTb = "!"; //string for NOT when it comes before the variable
     string NOTa = "'"; //string for NOT when it comes after the variable
-    bool notBefore = true; //which NOT to use
+    bool notBefore = false; //which NOT to use
     
     converter(string f);
     void setSymbols(string a, string o, string n); //setting the values of logic symbols
