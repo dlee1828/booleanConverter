@@ -20,6 +20,7 @@ int main() {
     c.printExpressions("outputFiles/expressions2.txt");
     
     c = converter("truthTables/table3.txt");
+    c.setNOTPosition(true);
     c.setSymbols(" ^ ", " v ", "¬ ");
     c.SOP();
     c.printExpressions("outputFiles/expressions3.txt");
