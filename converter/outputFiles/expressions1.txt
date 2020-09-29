@@ -1,0 +1,2 @@
+d = (!a!bc) + (a!b!c) + (a!bc) + (abc)
+e = (!a!b!c) + (!a!bc) + (a!b!c)
