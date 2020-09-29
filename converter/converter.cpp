@@ -9,7 +9,7 @@
 #include "converter.hpp"
 
 converter::converter(string f){
-    fileName = f;
+    inputFileName = f;
 }
 
 string converter::NOT(string s){
@@ -37,7 +37,7 @@ void converter::setNOTPosition(bool before){
 }
 
 void converter::read(){
-    inFile.open(fileName);
+    inFile.open(inputFileName);
     
     //reading variables
     string temp;
@@ -147,8 +147,8 @@ void converter::POS(){
     createAllExpressions();
 }
 
-void converter::printExpressions(){
-    outFile.open("Expressions.txt");
+void converter::printExpressions(string outputFileName){
+    outFile.open(outputFileName);
     
     outFile << allExpressions;
     

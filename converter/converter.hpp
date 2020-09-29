@@ -21,7 +21,7 @@ class converter{
 private:
     ifstream inFile;
     ofstream outFile;
-    string fileName;
+    string inputFileName;
     int numIn; //number of input variables
     int numOut; //number of output variables
     vector<string> inVars;
@@ -50,7 +50,7 @@ public:
     void setNOTPosition(bool before);
     void SOP();
     void POS();
-    void printExpressions();
+    void printExpressions(string outputFileName);
 };
 
 #endif /* converter_hpp */
