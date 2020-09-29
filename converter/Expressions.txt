@@ -1,0 +1,2 @@
+d = (a or b or c) and (a or not b or c) and (a or not b or not c) and (not a or not b or c)
+e = (a or not b or c) and (a or not b or not c) and (not a or b or not c) and (not a or not b or c) and (not a or not b or not c)
